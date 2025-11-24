@@ -10,11 +10,11 @@ class TestKauppa(unittest.TestCase):
         pankki_mock = Mock()
         viitegeneraattori_mock = Mock()
 
-        # palautetaan aina arvo 42
+        # palautetaan aina arvo 42 
         viitegeneraattori_mock.uusi.return_value = 42
 
         varasto_mock = Mock()
-
+        #random edit
         # tehdään toteutus saldo-metodille
         def varasto_saldo(tuote_id):
             if tuote_id == 1:

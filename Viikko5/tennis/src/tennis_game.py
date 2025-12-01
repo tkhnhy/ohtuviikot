@@ -18,7 +18,7 @@ class TennisGame:
     def get_score(self):
         if self.p1_score == self.p2_score:
             return self._get_tied_score()
-        elif self.p1_score > self.DEUCE_THRESHOLD or self.p2_score > self.DEUCE_THRESHOLD:
+        elif self.p1_score >= self.DEUCE_THRESHOLD + 1 or self.p2_score >= self.DEUCE_THRESHOLD + 1:
             return self._get_end_game_score()
         else:
             return self._get_regular_score()
